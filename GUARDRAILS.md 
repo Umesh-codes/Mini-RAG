@@ -1,0 +1,10 @@
+# Project Guardrails & Architecture Rules
+
+1. **Workflow Enforcement (OpenSpec):** Never write application code directly from a vague prompt. Always draft or update the 4 OpenSpec files (`proposal.md`, `specs.md`, `design.md`, `tasks.md`) inside `openspec/changes/` first and wait for my explicit approval (`apply`) before modifying source code.
+2. **Tech Stack Boundaries:**
+   - Language: Python 3.10+
+   - Orchestration: LangChain (`langchain`, `langchain-openai`, `langchain-chroma`, `langchain-text-splitters`)
+   - Vector Database: Local ChromaDB stored strictly inside `./chroma_db`
+   - LLM & Embeddings Endpoint: Local LM Studio server at `http://localhost:1234/v1` (OpenAI-compatible client, dummy API key `"lm-studio"`).
+3. **Security & Secrets:** Never read, modify, or commit `.env` files, API keys, or local credentials.
+4. **Scope Control:** Do not install extra third-party frameworks, cloud SDKs, or UI libraries unless explicitly specified in `tasks.md`.

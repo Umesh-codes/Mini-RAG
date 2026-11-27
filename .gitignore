@@ -1,0 +1,17 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local vector database storage
+chroma_db/
+
+# Secrets and local configurations
+.env
+.env.*
+*.local

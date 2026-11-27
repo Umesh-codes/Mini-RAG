@@ -1,4 +1,4 @@
-# Technical Documentation: Project Aritha Local Knowledge Base
+# Technical Documentation: Project Aritha Local Knowledge Base 
 
 ## Overview
 Project Aritha is a next-generation offline autonomous field robotics platform engineered for remote environmental monitoring and soil sampling in disconnected environments.
